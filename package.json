@@ -8,7 +8,8 @@
     "build": "npm run build:node && npm run build:browser",
     "build:node": "babel src/console.js --out-file dist/console.js",
     "build:browser": "browserify -t babelify ./src/console.js | tee dist/browser/lazy-console-emojis.js | minify --js > dist/browser/lazy-console-emojis.min.js",
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "nyc --reporter=text --reporter=lcov npm test"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "minify": "^4.1.1",
     "mocha": "^6.1.4",
     "nodemon": "^1.19.0",
+    "nyc": "^14.1.1",
     "sinon": "^7.3.2",
     "uglify-js": "^3.5.13",
     "uglifyify": "^5.0.1"

@@ -12,6 +12,7 @@ describe('#console', () => {
   afterEach(() => {
     console.log.restore();
   });
+
   describe('Existing emoji', () => {
     beforeEach(() => {
       console.beer('Have a pint');
