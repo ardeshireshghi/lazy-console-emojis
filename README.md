@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/ardeshireshghi/lazy-console-emojis/tree/master.svg?style=svg)](https://circleci.com/gh/ardeshireshghi/lazy-console-emojis/tree/master)
+
 # Console log with Emoji created JIT
 
 ## Summary
@@ -15,10 +17,10 @@ console.beer('It is beer O\'clock');
 Store the minified version in CDN or static server and load it into the page:
 
 ```html
-<script type="text/javascript" src="browser/lazy-console.emojis.min.js">
+<script type="text/javascript" src="browser/lazy-console.emojis.min.js"></script>
 <script>
   console.angry('API Error! 500');
-<script>
+</script>
 ```
 
 ### Node/Webpack/Browerify

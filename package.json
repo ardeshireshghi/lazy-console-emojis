@@ -11,9 +11,12 @@
     "test": "mocha",
     "coverage": "nyc --reporter=text --reporter=lcov npm test"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "console",
+    "console.log",
+    "logging"
+  ],
+  "author": "Ardeshir Eshghi",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
@@ -31,5 +34,10 @@
   },
   "dependencies": {
     "proxy-polyfill": "^0.3.0"
-  }
+  },
+  "repository": {
+    "url": "git@github.com:ardeshireshghi/lazy-console-emojis.git",
+    "type": "git"
+  },
+  "license": "GNU"
 }
