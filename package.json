@@ -1,0 +1,33 @@
+{
+  "name": "lazy-console-emojis",
+  "version": "0.0.1",
+  "description": "Creates console log messages with emojis on the fly",
+  "main": "dist/console.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "build": "npm run build:node && npm run build:browser",
+    "build:node": "babel src/console.js --out-file dist/console.js",
+    "build:browser": "browserify -t babelify ./src/console.js | tee dist/browser/lazy-console-emojis.js | minify --js > dist/browser/lazy-console-emojis.min.js",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
+    "chai": "^4.2.0",
+    "minify": "^4.1.1",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.0",
+    "sinon": "^7.3.2",
+    "uglify-js": "^3.5.13",
+    "uglifyify": "^5.0.1"
+  },
+  "dependencies": {
+    "proxy-polyfill": "^0.3.0"
+  }
+}
